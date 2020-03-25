@@ -1,9 +1,16 @@
-import requests,os,time,runtext
+import requests,os,time,sys
 
 class Spamtri:
 
 	def __init__(self):
 		pass
+
+	def load(self, x):
+		self.x = x
+		for i in self.x:
+			sys.stdout.write(i)
+			sys.stdout.flush()
+			time.sleep(0.001)
 
 
 	def spam(self):
@@ -35,7 +42,7 @@ class Spamtri:
 \x1b[31m        \(_|_)/       \x1b[37mInstagram \x1b[32m: termux.ghostid
 \x1b[31m         " ` "        \x1b[37mGithub    \x1b[32m: github.com/anonkyuhuu
 ''');os.system('clear')
-		runtext.runtext(self.banner, 0.001)
+		self.load(self.banner)
 		self.spam()
 
 
