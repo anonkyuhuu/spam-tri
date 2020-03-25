@@ -7,7 +7,7 @@ class Spamtri:
 
 	def load(self, x):
 		self.x = x
-		for i in self.x:
+		for i in self.x + '\n':
 			sys.stdout.write(i)
 			sys.stdout.flush()
 			time.sleep(0.001)
